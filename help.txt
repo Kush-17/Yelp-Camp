@@ -1,0 +1,109 @@
+All important stuff for Web dev
+Important terminal commands for project
+npm init -y
+npm i express
+
+
+To make npm nodemon public
+
+1.             mkdir ~/.npm-global
+2.             npm config set prefix '~/.npm-global'
+3.             export PATH=~/.npm-global/bin:$PATH
+4.             source ~/.profile
+5.             NPM_CONFIG_PREFIX=~/.npm-global
+6.               ********* Only use 2, 3, 5 **********
+
+
+npm install -g nodemon
+
+
+npm i ejs 
+
+npm i uuid
+// in js file
+const { v4: uuidv4 } = require('uuid');
+uuidv4();
+
+npm i method-override
+
+
+
+
+//make view directory in project folder inside it make .ejs file
+
+
+
+To start mongodb/brew/mongodb-community now and restart at login:
+  brew services start mongodb/brew/mongodb-community
+
+
+
+npm i mongoose //used to mongodB
+
+
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://127.0.0.1:27017/test');
+
+
+// getting-started.js
+const mongoose = require('mongoose');
+
+main().catch(err => console.log(err));
+
+async function main() {
+  await mongoose.connect('mongodb://127.0.0.1:27017/test');
+
+  // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
+}
+
+npm i morgan.    /// for middleware
+
+npm i ejs-mate   /// ejs-mate
+
+
+npm i joi       // for validation of our data
+
+
+npm i cookie-parser   // for cookies stuff they store stuff in the browser
+
+npm i express-session 
+//For a session it is similar to a cookie but here data is stored on the server side
+
+
+npm i connect-flash        // to show instantaneous flash messages
+
+npm i bcrypt   // for authentication i.e. password and stuff
+
+
+npm i passport passport-local passport-local-mongoose 
+// for authentication and good looking sign in’s
+
+npm i multer       // used for uploading images
+
+npm i dotenv      // for local files (images)
+
+
+npm i cloudinary multer-storage-cloudinary
+
+
+npm install @mapbox/mapbox-sdk             //    for maps
+
+
+npm i express-mongo-sanitize     // for error handling during matching in database
+
+
+npm i sanitize-html   // so user can’t enter html as input
+
+npm i helmet            // for remaining errors and threats
+
+npm i connect-mongo // for connecting to environmental database 
+
+npm install connect-mongo@latest // use it definitely for latest version
+
+
+
+// install node seeds/index.js
+
+// nodemon app.js
+
+
